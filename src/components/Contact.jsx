@@ -1,101 +1,60 @@
-import "../assets/styles/Contact.css";
+<form
+  action="https://formspree.io/f/mgogrbye"
+  method="POST"
+>
 
-function Contact() {
-  return (
-    <section className="contact" id="contact">
+  <label htmlFor="name">Your Name</label>
+  <input
+    id="name"
+    type="text"
+    name="name"
+    placeholder="Enter your name"
+    required
+  />
 
-      <div className="contact-title">
-        <span>BOOK A TABLE</span>
-        <h2>Reserve Your Dining Experience</h2>
-        <p>
-          Reserve your table today and enjoy delicious meals in a warm,
-          elegant atmosphere.
-        </p>
-      </div>
+  <label htmlFor="email">Email Address</label>
+  <input
+    id="email"
+    type="email"
+    name="email"
+    placeholder="Enter your email"
+    required
+  />
 
-      <div className="contact-wrapper">
+  <label htmlFor="phone">Phone Number</label>
+  <input
+    id="phone"
+    type="tel"
+    name="phone"
+    placeholder="Enter your phone number"
+  />
 
-        <div className="reservation-box">
+  <label htmlFor="date">Reservation Date</label>
+  <input
+    id="date"
+    type="date"
+    name="date"
+    required
+  />
 
-          <h3>Reservation Form</h3>
+  <label htmlFor="time">Reservation Time</label>
+  <input
+    id="time"
+    type="time"
+    name="time"
+    required
+  />
 
-          <form
-            action="https://formspree.io/f/mgogrbye"
-            method="POST"
-          >
+  <label htmlFor="message">Special Requests</label>
+  <textarea
+    id="message"
+    name="message"
+    rows="5"
+    placeholder="Any special requests?"
+  ></textarea>
 
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
+  <button type="submit">
+    Reserve Now
+  </button>
 
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
-            />
-
-            <input
-              type="date"
-              name="date"
-              required
-            />
-
-            <input
-              type="time"
-              name="time"
-              required
-            />
-
-            <textarea
-              name="message"
-              rows="5"
-              placeholder="Special Requests..."
-            ></textarea>
-
-            <button type="submit">
-              Reserve Now
-            </button>
-
-          </form>
-
-        </div>
-
-        <div className="info-box">
-
-          <h3>Visit FlavorNest</h3>
-
-          <p>📍 25 Aba Road, Port Harcourt</p>
-
-          <p>📞 +234 800 123 4567</p>
-
-          <p>✉ reservations@flavornest.com</p>
-
-          <p>🕘 Mon - Sun: 8AM - 11PM</p>
-
-          <div className="opening">
-            <h4>Opening Hours</h4>
-
-            <p>Breakfast : 8AM - 11AM</p>
-            <p>Lunch : 12PM - 4PM</p>
-            <p>Dinner : 6PM - 11PM</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-  );
-}
-
-export default Contact;
+</form>
