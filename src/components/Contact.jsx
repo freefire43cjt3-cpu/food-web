@@ -1,60 +1,78 @@
-<form
-  action="https://formspree.io/f/mgogrbye"
-  method="POST"
->
+import "../assets/styles/Contact.css";
 
-  <label htmlFor="name">Your Name</label>
-  <input
-    id="name"
-    type="text"
-    name="name"
-    placeholder="Enter your name"
-    required
-  />
+function Contact() {
+  return (
+    <section className="contact" id="contact">
 
-  <label htmlFor="email">Email Address</label>
-  <input
-    id="email"
-    type="email"
-    name="email"
-    placeholder="Enter your email"
-    required
-  />
+      <div className="contact-heading">
+        <span>CONTACT US</span>
+        <h2>Reserve Your Table Today</h2>
+        <p>
+          We'd love to hear from you. Whether you're booking a table or have a
+          question, send us a message and we'll get back to you.
+        </p>
+      </div>
 
-  <label htmlFor="phone">Phone Number</label>
-  <input
-    id="phone"
-    type="tel"
-    name="phone"
-    placeholder="Enter your phone number"
-  />
+      <div className="contact-container">
 
-  <label htmlFor="date">Reservation Date</label>
-  <input
-    id="date"
-    type="date"
-    name="date"
-    required
-  />
+        <div className="contact-form">
+          <form
+            action="https://formspree.io/f/mgogrbye"
+            method="POST"
+          >
 
-  <label htmlFor="time">Reservation Time</label>
-  <input
-    id="time"
-    type="time"
-    name="time"
-    required
-  />
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
 
-  <label htmlFor="message">Special Requests</label>
-  <textarea
-    id="message"
-    name="message"
-    rows="5"
-    placeholder="Any special requests?"
-  ></textarea>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
 
-  <button type="submit">
-    Reserve Now
-  </button>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+            />
 
-</form>
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+        <div className="contact-info">
+
+          <h3>Get In Touch</h3>
+
+          <p>📍 25 Aba Road, Port Harcourt, Rivers State</p>
+
+          <p>📞 +234 813 636 2066</p>
+
+          <p>✉ info@flavornest.com</p>
+
+          <p>🕒 Mon - Sun: 8:00 AM - 11:00 PM</p>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}
+
+export default Contact;

@@ -1,213 +1,86 @@
 .contact{
-    background:#0f0f0f;
     padding:100px 8%;
+    background:#181818;
     color:#fff;
 }
 
-.contact-title{
+.contact-heading{
     text-align:center;
     margin-bottom:60px;
 }
 
-.contact-title span{
-    color:#d4af37;
-    letter-spacing:3px;
-    font-weight:600;
+.contact-heading span{
+    color:#f4b400;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
-.contact-title h2{
-    font-size:48px;
+.contact-heading h2{
+    font-size:45px;
     margin:15px 0;
 }
 
-.contact-title p{
-    max-width:650px;
+.contact-heading p{
+    color:#d9d9d9;
+    max-width:700px;
     margin:auto;
-    color:#bdbdbd;
     line-height:1.8;
 }
 
-.contact-wrapper{
+.contact-container{
     display:grid;
     grid-template-columns:2fr 1fr;
     gap:40px;
 }
 
-.reservation-box{
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(212,175,55,.3);
-    border-radius:20px;
-    padding:40px;
-}
-
-.reservation-box h3{
-    color:#d4af37;
-    margin-bottom:30px;
-    font-size:28px;
-}
-
-.reservation-box form{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
+.contact-form form{
+    display:flex;
+    flex-direction:column;
     gap:20px;
 }
 
-.form-group{
-    display:flex;
-    flex-direction:column;
-}
-
-.form-group label{
-    color:#d4af37;
-    font-size:15px;
-    font-weight:600;
-    margin-bottom:8px;
-}
-
-.full-width{
-    grid-column:1/3;
-}
-
-.reservation-box input,
-.reservation-box textarea{
-    width:100%;
-    padding:16px;
-    border:1px solid rgba(255,255,255,.15);
+.contact-form input,
+.contact-form textarea{
+    padding:18px;
+    border:none;
+    border-radius:10px;
     outline:none;
-    border-radius:12px;
-    background:#1b1b1b;
-    color:#fff;
     font-size:16px;
-    transition:.3s;
+    background:#222;
+    color:#fff;
 }
 
-.reservation-box input::placeholder,
-.reservation-box textarea::placeholder{
-    color:#888;
-}
-
-.reservation-box input:focus,
-.reservation-box textarea:focus{
-    border-color:#d4af37;
-    box-shadow:0 0 12px rgba(212,175,55,.35);
-}
-
-.reservation-box textarea{
+.contact-form textarea{
     resize:none;
 }
 
-.reservation-box button{
-    grid-column:1/3;
-    padding:18px;
-    background:#d4af37;
-    color:#111;
+.contact-form button{
+    padding:16px;
     border:none;
-    border-radius:12px;
-    cursor:pointer;
-    font-size:17px;
+    background:#f4b400;
+    color:#111;
     font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
     transition:.3s;
 }
 
-.reservation-box button:hover{
+.contact-form button:hover{
     background:#fff;
-    transform:translateY(-4px);
 }
 
-.info-box{
-    background:#181818;
-    border:1px solid rgba(212,175,55,.3);
-    border-radius:20px;
-    padding:35px;
+.contact-info{
+    background:#222;
+    padding:30px;
+    border-radius:15px;
 }
 
-.info-box h3{
-    color:#d4af37;
-    margin-bottom:25px;
-    font-size:28px;
+.contact-info h3{
+    color:#f4b400;
+    margin-bottom:20px;
 }
 
-.info-box p{
+.contact-info p{
     margin:18px 0;
-    color:#ddd;
-    line-height:1.8;
-}
-
-.opening{
-    margin-top:35px;
-    border-top:1px solid rgba(255,255,255,.15);
-    padding-top:25px;
-}
-
-.opening h4{
-    color:#d4af37;
-    margin-bottom:15px;
-}
-
-@media(max-width:900px){
-
-.contact-wrapper{
-    grid-template-columns:1fr;
-}
-
-.reservation-box form{
-    grid-template-columns:1fr;
-}
-
-.full-width,
-.reservation-box button{
-    grid-column:1;
-}
-
-.contact-title h2{
-    font-size:36px;
-}
-
-}
-
-@media(max-width:768px){
-
-.contact{
-    padding:70px 5%;
-}
-
-.contact-title h2{
-    font-size:34px;
-}
-
-.reservation-box{
-    padding:25px;
-}
-
-.reservation-box form{
-    grid-template-columns:1fr;
-}
-
-.full-width,
-.reservation-box button{
-    grid-column:1;
-}
-
-.reservation-box input,
-.reservation-box textarea{
-    padding:15px;
-}
-
-}
-
-@media(max-width:480px){
-
-.contact-title h2{
-    font-size:28px;
-}
-
-.contact-title p{
-    font-size:15px;
-}
-
-.info-box{
-    padding:25px;
-}
-
+    line-height:1.7;
 }
