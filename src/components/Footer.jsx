@@ -41,11 +41,17 @@ function Footer() {
 
           <div className="socials">
 
-            <a href="#"><FaFacebookF /></a>
+           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+  <FaFacebookF />
+</a>
 
-            <a href="#"><FaInstagram /></a>
+<a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+  <FaInstagram />
+</a>
 
-            <a href="#"><FaXTwitter /></a>
+<a href="https://x.com" target="_blank" rel="noopener noreferrer">
+  <FaXTwitter />
+</a>
 
           </div>
         </div>
