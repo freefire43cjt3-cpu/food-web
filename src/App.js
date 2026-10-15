@@ -375,7 +375,7 @@ function App() {
               <span>From the grill</span>
             </div>
             <div className="gallery-item">
-              <img src={photo('photo-1515003197210-e0cd7184f8b5', 800)} alt="Colourful restaurant dish" loading="lazy" />
+              <img src="/images/ray3.jpeg" alt="Colourful restaurant dish" loading="lazy" />
               <span>Made with care</span>
             </div>
             <div className="gallery-item">
