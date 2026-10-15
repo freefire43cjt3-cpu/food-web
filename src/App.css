@@ -162,6 +162,55 @@ textarea:focus-visible {
   transition: color 0.25s;
 }
 
+/* ========================================
+   SAVORÉ — PREMIUM ARROW EFFECTS
+   ======================================== */
+
+.nav-cta span,
+.button span,
+.text-link span,
+.dish-order span {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.nav-cta span,
+.button span {
+  font-size: 1.15em;
+}
+
+.text-link span,
+.dish-order span {
+  font-size: 15px;
+}
+
+.nav-cta:hover span,
+.button:hover span,
+.text-link:hover span,
+.dish-order:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* Keyboard accessibility */
+.nav-cta:focus-visible span,
+.button:focus-visible span,
+.text-link:focus-visible span,
+.dish-order:focus-visible span {
+  transform: translate(2px, -2px);
+}
+
+/* Prevent hover movement on touch devices */
+@media (hover: none) {
+  .nav-cta:hover span,
+  .button:hover span,
+  .text-link:hover span,
+  .dish-order:hover span {
+    transform: none;
+  }
+}
+
 .nav-links > a:not(.nav-cta)::after {
   position: absolute;
   right: 0;
