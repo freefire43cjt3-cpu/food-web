@@ -181,6 +181,10 @@ textarea:focus-visible {
   font-size: 1.15em;
 }
 
+.button span{
+  font-family: Arial, sans-serif;
+}
+
 .text-link span,
 .dish-order span {
   font-size: 15px;
